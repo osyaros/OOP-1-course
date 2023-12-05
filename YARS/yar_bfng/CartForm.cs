@@ -34,7 +34,7 @@ namespace yar_bfng
             BackgroundImage = pictureBoxCart.Image;
             int x = 0;
             int y = 100;
-            foreach (KeyValuePair<Product,int> kuplenproduct in CartForm.products)
+            foreach (KeyValuePair<Product,int> kuplenproduct in CartForm.products) //Вывод товаров из корзины
             {
                Product product = kuplenproduct.Key;
 
@@ -138,7 +138,7 @@ namespace yar_bfng
             }
 
             calculateCart();
-            label1.Text = TotalPrice.ToString();
+            label1.Text = TotalPrice.ToString();        //ИТОГОВАЯ СУММА
             label1.Location = new Point(600, 200 * 2);
 
 
